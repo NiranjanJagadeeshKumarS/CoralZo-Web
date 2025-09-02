@@ -1,0 +1,369 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto Mono";
+}
+
+
+body{
+    
+    background-color: white;
+    font-family: ro;
+}
+/*Navigation*/
+
+
+.navgation{
+    position: sticky;
+    
+    top: 0;
+    border-bottom: #0a0908 solid 1px;
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    
+    width:fit-content;
+    height: 60px;
+    border-radius: 20px;
+    
+}
+.CorlaZofont{
+    align-self: center;
+    width: 170px;
+    height: 40px;
+}
+
+
+.nav-pages{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+.nav-pages a{
+    display: block;
+    padding: 20px 16px;
+    color: #0a0908;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Nunito", "sans-serif";
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: all ease-in-out 100ms;
+    margin: 0;
+}
+
+.nav-pages a:hover{
+    background-color: #ffb997;
+}
+
+
+
+.nav-pages .ContactUsButton{
+    padding: 20px 18px;
+    margin-left: 16px;
+    margin-right: 5px;
+    border: #ffb997 solid 2px;
+    border: 22px;
+    background-color: #ffb997;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 22px;
+
+
+
+}
+
+.nav-pages .ContactUsButton:hover{
+    background-color: #fea274;
+    font-size: 20px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 34px;
+}
+
+.hamburger .bar{
+    flex-basis: 100%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    margin: 3px;
+}
+
+@media(max-width : 809px){
+
+    nav{
+        display: flex;
+
+    }
+
+    .hamburger{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 15px;
+
+    }
+
+    .nav-pages{
+        display: none;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+
+    }
+
+    .nav-pages li{
+        flex-basis: 100%;
+    }
+
+    .nav-pages a{
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .nav-pages a:hover{
+        background-color: #fea274;
+    }
+
+    .nav-pages .ContactUsButton{
+        padding: 30px 16px;
+        margin-left: 0;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 20px
+    }
+
+    .nav-pages .ContactUsButton:hover{
+        background-color: #fea274;
+    }
+}
+
+/* Hero Section */
+
+.hero-section{
+    background-image: url(img/wallhaven-o3wvop_1600x900.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    width: auto;
+    height: 600px;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    align-items: center;
+}
+
+
+
+.hero-text-container{
+    width: 650px;
+    color: #0a0908;
+    font-size: 22px;
+    margin-left: 100px;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+
+.hero-text{
+    color: #0a0908;
+    
+}
+
+.hero-text-line1{
+    font-size: 52px;
+    font-family: "Roboto Mono"monospace;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+.hero-text-line2{
+    padding-left:10px ;
+    font-size: 18px;
+    padding-bottom: 30px;
+
+
+}
+.hero-image{
+    justify-self: flex-end;
+    position: relative;
+    width: 650px;
+    margin: 20px;
+    height: 450px;
+
+
+
+}
+
+.grid1, .grid2{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+.grid1{
+    right: 0;
+    bottom: 0;
+}
+
+.grid2{
+    left: 0;
+    top: 0;
+}
+.hero-main-img{
+    height: 400px;
+    width:600px;
+    border-radius:32px;
+    position: absolute;
+    top: 5.5%;
+    right: 4%;
+    opacity: 0.89; 
+}
+@media (max-width:1440px){
+    
+    .hero-section{
+        height: fit-content;
+    }
+}
+
+@media (max-width:1189px){
+    
+    .hero-text-container{
+        width: fit-content;
+        margin-left: 5%;
+    }
+}
+
+@media(max-width:700px){
+    .hero-image{
+        width: 100%;
+        height: 450px;
+    }
+    .hero-main-img{
+        width:90%;
+        height: 400px;
+
+    }
+
+}    
+
+
+@media(max-width:600px){
+    .hero-image{
+        width: 100%;
+        height: 350px;
+    }
+    .hero-main-img{
+        width:90%;
+        height: 300px;
+
+    }
+
+    .hero-text-line1{
+        font-size: 32px;
+        
+    }
+}
+
+
+.review-section{
+    background-color: #ffffff4b;
+    border-radius: 35px;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.review-section-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    width: 50%;
+    font-family: "Roboto Mono";
+    margin-top: 60px;
+    margin-left: 90px;
+}
+
+.review-section-text1{
+    font-size: 42px;
+    color: #ff8abd;
+
+}
+
+.review-section-posts{
+    height: 800px;
+    border-radius: 50px;
+    margin-top: 60px;
+    width: 400px;
+    margin-right: 50px;
+    background-color: rgb(11, 14, 14);
+}
+.review-section-posts-notification-center{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.review-section-posts-text{
+    margin: 50px 30px 30px 30px;
+    font-size: 18px;
+    font-family:sans-serif;
+    font-weight: 600;
+    color: white;
+    
+}
+.review-section-posts-img{
+    padding: 25px;
+    width: 40px;
+    height: 30px;
+    
+}
+
+.review-section-posts-message{
+    margin: 20px;
+    width: 90% ;
+    height: 130px;
+    border-radius: 32px;
+    background-color: #ffebeb69;
+    align-content: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 50px 80%;
+}
+
+.review-section-posts1{
+    align-content: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 50px 80%;
+    height: 150px;
+}
+
+.review-section-posts1-img{
+    width: 50px;
+    height: 50px;
+    padding: 5px 5px 5px 12px;
+
+}
+
+.review-section-posts-message-text{
+    margin-right: 20px;
+}
+
+
